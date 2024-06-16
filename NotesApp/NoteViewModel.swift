@@ -11,7 +11,7 @@ import FirebaseFirestore
 
 class NoteViewModel : ObservableObject {
     
-    @Published private(set) var notes = [NoteModel]()
+    @Published var notes = [NoteModel]()
     let db = Firestore.firestore()
     
     func fetchData() async {
@@ -24,5 +24,9 @@ class NoteViewModel : ObservableObject {
         } catch {
           print("Error getting documents: \(error)")
         }
+    }
+    
+    func saveData(note: NoteModel) {
+        
     }
 }

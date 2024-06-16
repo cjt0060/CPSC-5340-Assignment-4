@@ -9,22 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var notesApp = NoteViewModel()
+    @StateObject var notesApp = NoteViewModel()
+    @State var note = NoteModel(title: "", notesdata: "")
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(notesApp.notes) { note in
+                ForEach($notesApp.notes) { $note in
                     NavigationLink {
-                        NoteDetail()
+                        NoteDetail(note: $note)
                     } label: {
                         Text(note.title)
                     }
                 }
+                Section {
+                    NavigationLink {
+                        NoteDetail(note: $note)
+                    } label: {
+                        Text("New Note")
+                            .foregroundStyle(Color.gray)
+                            .font(.system(size: 15))
+                    }
+                }
             }
-            .task {
-                await notesApp.fetchData()
-            }
+            
+        }
+        .task {
+            await notesApp.fetchData()
         }
     }
 }
