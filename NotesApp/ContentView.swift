@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct ContentView: View {
     
@@ -40,6 +41,14 @@ struct ContentView: View {
         .refreshable {
             await notesApp.fetchData()
         }
+        Spacer()
+        NavigationLink(destination: AuthView()) {
+            Text("Logout")
+                .foregroundColor(.red)
+                .font(.system(size: 20))
+                .padding()
+        }
+        
     }
 }
 

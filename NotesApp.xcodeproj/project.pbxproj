@@ -19,6 +19,7 @@
 		A39A3D9D2C1E85D20022320C /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = A39A3D9C2C1E85D20022320C /* Preview Content */; };
 		A39A3D9F2C1E86180022320C /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A3D9E2C1E86180022320C /* NoteViewModel.swift */; };
 		A39A3DA12C1E893B0022320C /* NoteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A3DA02C1E893B0022320C /* NoteDetail.swift */; };
+		A39A3DAA2C1F49770022320C /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A3DA92C1F49770022320C /* AuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A39A3D9C2C1E85D20022320C /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		A39A3D9E2C1E86180022320C /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		A39A3DA02C1E893B0022320C /* NoteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetail.swift; sourceTree = "<group>"; };
+		A39A3DA92C1F49770022320C /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				A39A3D812C1E7DF60022320C /* NotesAppApp.swift */,
+				A39A3DA92C1F49770022320C /* AuthView.swift */,
 				A39A3D832C1E7DF60022320C /* ContentView.swift */,
 				A39A3DA02C1E893B0022320C /* NoteDetail.swift */,
 				A39A3D9E2C1E86180022320C /* NoteViewModel.swift */,
@@ -161,6 +164,7 @@
 			files = (
 				A39A3D9F2C1E86180022320C /* NoteViewModel.swift in Sources */,
 				A39A3D842C1E7DF60022320C /* ContentView.swift in Sources */,
+				A39A3DAA2C1F49770022320C /* AuthView.swift in Sources */,
 				A39A3D9B2C1E84880022320C /* NoteModel.swift in Sources */,
 				A39A3D822C1E7DF60022320C /* NotesAppApp.swift in Sources */,
 				A39A3DA12C1E893B0022320C /* NoteDetail.swift in Sources */,
