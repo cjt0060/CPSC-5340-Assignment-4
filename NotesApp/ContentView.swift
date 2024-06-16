@@ -37,6 +37,9 @@ struct ContentView: View {
         .task {
             await notesApp.fetchData()
         }
+        .refreshable {
+            await notesApp.fetchData()
+        }
     }
 }
 
