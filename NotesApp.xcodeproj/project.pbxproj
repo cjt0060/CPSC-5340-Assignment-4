@@ -10,12 +10,12 @@
 		A39A3D822C1E7DF60022320C /* NotesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A3D812C1E7DF60022320C /* NotesAppApp.swift */; };
 		A39A3D842C1E7DF60022320C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A3D832C1E7DF60022320C /* ContentView.swift */; };
 		A39A3D862C1E7DF90022320C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39A3D852C1E7DF90022320C /* Assets.xcassets */; };
-		A39A3D892C1E7DF90022320C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39A3D882C1E7DF90022320C /* Preview Assets.xcassets */; };
 		A39A3D902C1E7ED90022320C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39A3D8F2C1E7ED90022320C /* GoogleService-Info.plist */; };
 		A39A3D932C1E80C00022320C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A39A3D922C1E80C00022320C /* FirebaseAnalytics */; };
 		A39A3D952C1E80C00022320C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A39A3D942C1E80C00022320C /* FirebaseAuth */; };
 		A39A3D972C1E80C00022320C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A39A3D962C1E80C00022320C /* FirebaseFirestore */; };
 		A39A3D992C1E80C00022320C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A39A3D982C1E80C00022320C /* FirebaseFirestoreSwift */; };
+		A39A3D9B2C1E84880022320C /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A3D9A2C1E84880022320C /* NoteModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +23,8 @@
 		A39A3D812C1E7DF60022320C /* NotesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppApp.swift; sourceTree = "<group>"; };
 		A39A3D832C1E7DF60022320C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A39A3D852C1E7DF90022320C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A39A3D882C1E7DF90022320C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A39A3D8F2C1E7ED90022320C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A39A3D9A2C1E84880022320C /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,19 +63,11 @@
 			children = (
 				A39A3D812C1E7DF60022320C /* NotesAppApp.swift */,
 				A39A3D832C1E7DF60022320C /* ContentView.swift */,
+				A39A3D9A2C1E84880022320C /* NoteModel.swift */,
 				A39A3D8F2C1E7ED90022320C /* GoogleService-Info.plist */,
 				A39A3D852C1E7DF90022320C /* Assets.xcassets */,
-				A39A3D872C1E7DF90022320C /* Preview Content */,
 			);
 			path = NotesApp;
-			sourceTree = "<group>";
-		};
-		A39A3D872C1E7DF90022320C /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A39A3D882C1E7DF90022320C /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +137,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A39A3D892C1E7DF90022320C /* Preview Assets.xcassets in Resources */,
 				A39A3D862C1E7DF90022320C /* Assets.xcassets in Resources */,
 				A39A3D902C1E7ED90022320C /* GoogleService-Info.plist in Resources */,
 			);
@@ -159,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39A3D842C1E7DF60022320C /* ContentView.swift in Sources */,
+				A39A3D9B2C1E84880022320C /* NoteModel.swift in Sources */,
 				A39A3D822C1E7DF60022320C /* NotesAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
