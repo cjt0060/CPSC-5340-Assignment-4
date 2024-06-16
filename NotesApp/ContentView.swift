@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var notesApp = NoteViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(notesApp.notes) { note in
+                    NavigationLink {
+                        NoteDetail()
+                    } label: {
+                        Text(note.title)
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
