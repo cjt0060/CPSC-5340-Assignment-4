@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import FirebaseCore
+import FirebaseFirestore
 
 class NoteViewModel : ObservableObject {
     

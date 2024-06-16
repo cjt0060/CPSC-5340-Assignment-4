@@ -22,6 +22,9 @@ struct ContentView: View {
                     }
                 }
             }
+            .onAppear {
+                notesApp.fetchData()
+            }
         }
     }
 }
