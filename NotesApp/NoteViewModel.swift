@@ -12,8 +12,17 @@ import FirebaseFirestore
 class NoteViewModel : ObservableObject {
     
     @Published private(set) var notes = [NoteModel]()
+    let db = Firestore.firestore()
     
-    func fetchData() {
-        
+    func fetchData() async {
+        self.notes.removeAll()
+        do {
+          let querySnapshot = try await db.collection("notes").getDocuments()
+          for document in querySnapshot.documents {
+              self.notes.append(try document.data(as: NoteModel.self))
+          }
+        } catch {
+          print("Error getting documents: \(error)")
+        }
     }
 }

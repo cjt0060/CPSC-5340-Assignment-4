@@ -22,8 +22,8 @@ struct ContentView: View {
                     }
                 }
             }
-            .onAppear {
-                notesApp.fetchData()
+            .task {
+                await notesApp.fetchData()
             }
         }
     }
