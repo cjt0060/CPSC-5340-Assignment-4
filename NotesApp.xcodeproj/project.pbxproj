@@ -16,6 +16,8 @@
 		A39A3D972C1E80C00022320C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A39A3D962C1E80C00022320C /* FirebaseFirestore */; };
 		A39A3D992C1E80C00022320C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A39A3D982C1E80C00022320C /* FirebaseFirestoreSwift */; };
 		A39A3D9B2C1E84880022320C /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A3D9A2C1E84880022320C /* NoteModel.swift */; };
+		A39A3D9D2C1E85D20022320C /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = A39A3D9C2C1E85D20022320C /* Preview Content */; };
+		A39A3D9F2C1E86180022320C /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A3D9E2C1E86180022320C /* NoteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		A39A3D852C1E7DF90022320C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A39A3D8F2C1E7ED90022320C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A39A3D9A2C1E84880022320C /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		A39A3D9C2C1E85D20022320C /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		A39A3D9E2C1E86180022320C /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +67,11 @@
 			children = (
 				A39A3D812C1E7DF60022320C /* NotesAppApp.swift */,
 				A39A3D832C1E7DF60022320C /* ContentView.swift */,
+				A39A3D9E2C1E86180022320C /* NoteViewModel.swift */,
 				A39A3D9A2C1E84880022320C /* NoteModel.swift */,
 				A39A3D8F2C1E7ED90022320C /* GoogleService-Info.plist */,
 				A39A3D852C1E7DF90022320C /* Assets.xcassets */,
+				A39A3D9C2C1E85D20022320C /* Preview Content */,
 			);
 			path = NotesApp;
 			sourceTree = "<group>";
@@ -137,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39A3D9D2C1E85D20022320C /* Preview Content in Resources */,
 				A39A3D862C1E7DF90022320C /* Assets.xcassets in Resources */,
 				A39A3D902C1E7ED90022320C /* GoogleService-Info.plist in Resources */,
 			);
@@ -149,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39A3D9F2C1E86180022320C /* NoteViewModel.swift in Sources */,
 				A39A3D842C1E7DF60022320C /* ContentView.swift in Sources */,
 				A39A3D9B2C1E84880022320C /* NoteModel.swift in Sources */,
 				A39A3D822C1E7DF60022320C /* NotesAppApp.swift in Sources */,
