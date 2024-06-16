@@ -12,6 +12,8 @@ struct ContentView: View {
     
     @StateObject var notesApp = NoteViewModel()
     @State var note = NoteModel(title: "", notesdata: "")
+    @Binding var isLoggedIn: Bool
+    var logoutAction: () -> Void
     
     var body: some View {
         NavigationStack {
@@ -42,16 +44,16 @@ struct ContentView: View {
             await notesApp.fetchData()
         }
         Spacer()
-        NavigationLink(destination: AuthView()) {
-            Text("Logout")
-                .foregroundColor(.red)
-                .font(.system(size: 20))
-                .padding()
-        }
+        Text("Logout")
+            .onTapGesture {
+                logoutAction()
+            }
+            .foregroundStyle(Color.red)
+            .font(.system(size: 20))
         
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}
